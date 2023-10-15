@@ -1,0 +1,228 @@
+ *{
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+html,body{
+    background-color: #172627;
+    cursor: url(icons8-cursor-48.png) , auto;
+} 
+
+a{
+    cursor: url(icons8-cursor-48.png) , auto; 
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+.name span{
+    position: relative;
+    left: -10rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-left: 4px solid #20CD8D;
+    border-radius: 4px;
+    margin: 1rem 1rem;
+    padding: 10px 15px;
+    color: white;
+    transition: all 0.5s;
+}
+.socialmedia span{
+    padding-right: 10px;
+    font-size: 1.2rem;
+    border-right: 4px solid #20CD8D;
+    color: white;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.socialmedia a i{
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #20CD8D;
+}
+.socialmedia a i:hover{
+    color: white;
+}
+.btn{
+    border: 2px solid #20CD8D;
+    box-shadow: 0 6px 0px #20CD8D;
+    transition: all 0.2s ease;
+}
+
+.btn:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0px #20CD8D;
+}
+
+.contact{
+    position: absolute;
+    top: 13rem;
+    left: 11rem;
+    width: 310px;
+    height: 500px;
+    /* background-color: #20CD8D; */
+    background-image: radial-gradient(circle at 0% 0%, #20cd8d,#006c76);
+    border-radius: 2rem;
+}
+
+.name-text h1{
+    padding: 10px 20px;
+}
+
+.input-form form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.form input,button{
+    cursor: url("icons8-cursor-48.png"), auto;
+}
+.input-form input{
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+::placeholder{
+    color: black;
+}
+
+.input-form button{
+    width: 110px;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    background-color: #172627;
+    outline: none;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    margin-top: 1.5rem;
+    margin-left: 6rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 0.5rem;
+    margin-left: 25rem;
+}
+
+.grid-item{
+    background-image: radial-gradient(circle at 0% 0%, #20cd8d,#006c76);
+    width: 270px;   
+    height: 300px;
+    border-radius: 2rem;
+}
+.grid-item a i{
+padding: 10px 10px;
+   font-size: 1.5rem;
+   color: #213a3c;
+   margin-left: 13rem;
+   margin-top: 0.8rem;
+   background-color: #20CD8D;
+   border-radius: 50%;
+}
+
+.grid-item h1{
+    text-align: center;
+    padding: 4.5rem 0.5rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+}
+
+.grid-item h1 i{
+    padding: 4px;
+    background-color: #20CD8D;
+    border-radius: 50%;
+    font-size: 1.3rem;
+    margin-right: 0.8rem;
+}
+/* -------------------------flip card---------------------- */
+.flip-card {
+    background-color: transparent;
+    width: 270px;   
+    height: 300px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    background-image: radial-gradient(circle at 0% 0%, #20cd8d,#006c76);
+    border-radius: 2rem;
+    border: 2px solid #20CD8D;
+    box-shadow: 0 6px 0px #20CD8D;
+    /*  */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+  
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: rotateY(180deg);
+}
+.grid2 i{
+    font-size: 2rem;
+}
+
+.dwn-btn{
+    position: absolute;
+    top: 7.5rem;
+    left: 3.5rem;
+    /* transform: translate(-50%,-50%); */
+}
+.dwn-btn button{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: #172627;
+    box-shadow: 0 6px 0 #20CD8D;
+    border-radius: 1rem;
+    transition: all 0.2s ease;
+    border: 1px solid #20CD8D;
+}
+.dwn-btn button:active{
+    transform: translateY(4px);
+    box-shadow: 0 0px 0px #20CD8D;
+}
+.dwn-btn button i{
+    font-size: 1.4rem;
+}
+
+/* *****************Work section************************ */
+
